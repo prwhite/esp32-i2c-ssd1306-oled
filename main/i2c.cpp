@@ -70,7 +70,7 @@ bool I2C::write(uint8_t data)
         data = data << 1;
         _SCL0;
     }
-    _SDA1;
+    _SDA0;                  // Need to go low on data line during ACK.
     _DELAY;
     _SCL1;
     _DELAY;
