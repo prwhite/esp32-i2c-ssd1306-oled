@@ -68,8 +68,8 @@ public:
 	 */
 	void term();
 	/**
-	 * @brief   Return OLED panel height
-	 * @return  Panel height, or return 0 if failed (panel not initialized)
+	 * @brief   Return OLED panel width
+	 * @return  Panel width, or return 0 if failed (panel not initialized)
 	 */
 	uint8_t get_width();
 	/**
@@ -109,7 +109,8 @@ public:
 	 * @param   h       Line height
 	 * @param   color   Color of the line
 	 */
-	void draw_vline(int8_t x, int8_t y, uint8_t h, ssd1306_color_t color);/**
+	void draw_vline(int8_t x, int8_t y, uint8_t h, ssd1306_color_t color);
+	/**
 	 * @brief   Draw a rectangle
 	 * @param   x       X coordinate or starting (top left) point
 	 * @param   y       Y coordinate or starting (top left) point
